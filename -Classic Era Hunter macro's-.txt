@@ -1,0 +1,244 @@
+-Classic Era Hunter macro's-
+
+Fire + Explosive trap:
+
+#showtooltip Explosive Trap
+/petpassive
+/stopattack
+/stopcasting
+/cast [combat] Feign Death
+/cast [mod:shift] Explosive Trap;
+/cast Immolation Trap
+
+Frost+Freezing trap:
+
+#showtooltip Freezing Trap
+/petpassive
+/stopattack
+/stopcasting
+/cast [combat] Feign Death
+/cast [mod:shift] Frost Trap;
+/cast Freezing Trap
+
+AimedShot:
+
+#showtooltip Aimed Shot
+/cleartarget [dead]
+/targetenemy [noharm]
+/stopattack
+/cast !Aimed Shot
+/cleartarget
+/targetlasttarget
+
+ArcaneShot:
+
+#showtooltip
+/cast [mod:shift,@mouseover,harm,nodead] Arcane Shot(Rank 1)
+/cast [mod:shift] Arcane Shot(Rank 1)
+/cast [@mouseover,harm,nodead] Arcane Shot
+/cast Arcane Shot
+/cast !Auto Shot
+
+AutoShot + Wingclip:
+
+#showtooltip
+/cleartarget [dead]
+/targetenemy [noharm]
+/stopattack
+/cast !Auto Shot
+/cast Wing Clip(rank 1)
+
+Beserking opener:
+
+#showtooltip Berserking
+/cleartarget [dead]
+/targetenemy [noharm]
+/stopattack
+/use 13
+/use 14
+/cast Berserking
+/cast !Auto Shot
+
+Rapidfire opener:
+
+#showtooltip Rapid Fire
+/cleartarget [dead]
+/targetenemy [noharm]
+/stopattack
+/use 13
+/use 14
+/cast Berserking
+/cast Rapid Fire
+/cast !Auto Shot
+
+Aspect of the Cheetah:
+
+#showtooltip
+/cast !Aspect of the Cheetah
+
+Concussive Shot:
+
+#showtooltip
+/cast [@mouseover,harm,nodead] Concussive Shot
+/cleartarget [dead]
+/targetenemy [noharm]
+/stopattack
+/cast Concussive Shot
+
+Disengage:
+
+#showtooltip
+/cast [@mouseover,harm,exists][] Disengage
+/cast Disengage
+
+Eagle eye:
+
+#showtooltip Eagle Eye
+/cast !Eagle Eye
+
+1 button Eyes of the beast/call/revive pet/petfollow + dismiss pet.
+
+#showtooltip
+/cast [mod:alt] Dismiss Pet;
+/cast [@pet,dead] !Revive Pet; [nopet] Call Pet
+/petfollow
+/cast Eyes of the Beast
+/cancelaura Eyes of the Beast
+
+1 button Mend pet/revive pet/Call pet:
+
+#showtooltip Revive Pet
+/cast [@pet,dead] !Revive Pet; [nopet] Call Pet; !Mend Pet
+
+1 button Feed pet:
+
+#showtooltip
+/cast Feed Pet
+/use [mod:shift] Homemade Cherry Pie; Roasted Quail
+
+Feign Dead:
+
+#showtooltip Feign Death
+/petpassive
+/stopattack
+/stopcasting
+/cast [combat] Feign Death
+
+Coldrage Daggers equip:
+
+#showtooltip
+/equipslot [mod:shift] 16 Weapon A
+/equipslot [mod:shift] 17 Weapon B
+/castsequence [nomod] reset=2 Coldrage Dagger
+/equipslot [nomod] 17 Coldrage Dagger
+
+Growl Macro: (Always use rank in this macro)
+
+#showtooltip
+/cleartarget [dead]
+/targetenemy [noharm]
+/petattack
+/petattack [@mouseover,harm,nodead]
+/cast [@mouseover,harm,nodead][] Growl(rank 2)
+
+Aspect of the Hawk/Monkey + cancelaura Cheetah and Pack
+
+#showtooltip
+/cancelaura Aspect of the Cheetah
+/cancelaura Aspect of the Pack
+/cast [mod:alt] !Aspect of the Monkey
+/cast !Aspect of the Hawk
+
+Aspect of the Pack:
+
+#showtooltip
+/cast !Aspect of the Pack
+
+Aspect of the Wild:
+
+#showtooltip
+/cast !Aspect of the Wild
+
+Hunter's Mark:
+
+#showtooltip
+/cast [@mouseover,harm,nodead] !Hunter's Mark;
+/cleartarget [dead]
+/targetenemy [noharm]
+/cast !Hunter's Mark
+
+Raptor Strike:
+
+#showtooltip Raptor Strike
+/stopcasting
+/cast Raptor Strike
+/startattack
+/cast Counterattack
+/cast Mongoose Bite
+
+MultiShot + rank 1 MultiShot:
+
+#showtooltip
+/cleartarget [dead]
+/targetenemy [noharm]
+/stopattack
+/cast [mod:alt,@mouseover,harm,nodead] Multi-Shot(Rank 1); [mod:alt] Multi-Shot(Rank 1); [@mouseover,harm,nodead] Multi-Shot; Multi-Shot
+
+Petattack:
+
+/cleartarget [dead]
+/targetenemy [noharm]
+/cast [nopet] Call Pet;
+/petattack
+/petattack [@mouseover,harm,nodead]
+
+ScatterShot:
+
+#showtooltip
+/cast [@mouseover,harm,nodead] Scatter Shot
+/cleartarget [dead]
+/targetenemy [noharm]
+/stopattack
+/cast Scatter Shot
+
+Scopid Sting:
+
+#showtooltip
+/cast [@mouseover,harm,nodead] Scorpid Sting;
+/cleartarget [dead]
+/targetenemy [noharm]
+/stopattack
+/cast Scorpid Sting
+
+Serpent Sting + rank 1
+
+#showtooltip
+/cleartarget [dead]
+/targetenemy [noharm]
+/stopattack
+/cast [mod:alt,@mouseover,harm,nodead] Serpent Sting(Rank 1); [mod:alt] Serpent Sting(Rank 1); [@mouseover,harm,nodead] Serpent Sting; Serpent Sting
+
+Tranq Shot:
+
+#showtooltip
+/cast Tranquilizing Shot
+/cast !Auto Shot
+
+Viper Sting:
+
+#showtooltip Viper Sting
+/cast [@mouseover,harm,nodead] Viper Sting;
+/cleartarget [dead]
+/targetenemy [noharm]
+/stopattack
+/cast Viper Sting
+
+Volley + item:
+
+#showtooltip Volley
+/use [@cursor] Hi-Explosive Bomb
+/cast Volley
+
+
+
+
