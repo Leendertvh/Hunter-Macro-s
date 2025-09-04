@@ -124,11 +124,11 @@ Feign Dead:
 /stopcasting
 /cast [combat] Feign Death
 
-Coldrage Daggers equip:
+Coldrage Daggers equip: (Click/press twice)
 
 #showtooltip
-/equipslot [mod:shift] 16 Weapon A
-/equipslot [mod:shift] 17 Weapon B
+/equipslot [mod:shift] 16 WeaponA
+/equipslot [mod:shift] 17 WeaponB
 /castsequence [nomod] reset=2 Coldrage Dagger
 /equipslot [nomod] 17 Coldrage Dagger
 
@@ -238,6 +238,7 @@ Volley + item:
 #showtooltip Volley
 /use [@cursor] Hi-Explosive Bomb
 /cast Volley
+
 
 
 
