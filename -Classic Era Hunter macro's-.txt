@@ -27,8 +27,7 @@ AimedShot:
 /targetenemy [noharm]
 /stopattack
 /cast !Aimed Shot
-/cleartarget
-/targetlasttarget
+/cast !Auto Shot
 
 ArcaneShot:
 
@@ -84,6 +83,7 @@ Concussive Shot:
 /targetenemy [noharm]
 /stopattack
 /cast Concussive Shot
+/cast !Auto Shot
 
 Disengage:
 
@@ -124,7 +124,7 @@ Feign Dead:
 /stopcasting
 /cast [combat] Feign Death
 
-Coldrage Daggers equip: (Click/press twice)
+Coldrage Daggers equip: (press twice)
 
 #showtooltip
 /equipslot [mod:shift] 16 WeaponA
@@ -139,7 +139,7 @@ Growl Macro: (Always use rank in this macro)
 /targetenemy [noharm]
 /petattack
 /petattack [@mouseover,harm,nodead]
-/cast [@mouseover,harm,nodead][] Growl(rank 2)
+/cast [@mouseover,harm,nodead][] Growl(rank 4)
 
 Aspect of the Hawk/Monkey + cancelaura Cheetah and Pack
 
@@ -238,6 +238,7 @@ Volley + item:
 #showtooltip Volley
 /use [@cursor] Hi-Explosive Bomb
 /cast Volley
+
 
 
 
